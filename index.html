@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Converter</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <h1>Roman Numeral/Modern Number Converter</h1>
+  <div id="romanToModern">
+    <label for="userInput">Enter Roman Numerals: </label>
+    <input type="text" id="userInputRoman" required>
+    <button onclick="convertToModern(document.getElementById('userInputRoman').value)">Convert</button>
+    <div id="convertedToModern"></div>
+  </div>
+  <div id="modernToRoman">
+    <label for="userInput">Enter Modern Number: </label>
+    <input type="text" id="userInputModern" required>
+    <button onclick="convertToRoman(document.getElementById('userInputModern').value)">Convert</button>
+    <div id="convertedToRoman"></div>
+  </div>
+  <script src="script.js"></script>
+</body>
+
+</html>
